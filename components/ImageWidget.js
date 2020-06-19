@@ -4,7 +4,7 @@ StyleSheet,
 TouchableOpacity,
 Image,
  } from 'react-native';
-import ImageEditor from "@react-native-community/image-editor";
+// import ImageEditor from "@react-native-community/image-editor";
 import { ImageManipulator } from 'expo-image-crop';
 import * as ImagePicker from 'expo-image-picker';
 import { purple, white } from '../utils/colors';
@@ -29,15 +29,16 @@ export default class ImageWidget extends Component {
             if (result.cancelled) {
                 return;
             } else {
-                // this.setState({ image: result.uri });
-                ImageEditor.cropImage(result.uri, {
-                    offset: {x: 0, y: 0},
-                    size: { width: result.width, height: result.height },
-                    displaySize: { width: 200, height: 200 },
-                    resizeMode: 'contain',
-                }).then((uri) => this.setState({ image: uri }))
-                .catch(
-                () => console.log('Error'));
+                this.setState({ image: result.uri });
+
+                // ImageEditor.cropImage(result.uri, {
+                //     offset: {x: 0, y: 0},
+                //     size: { width: result.width, height: result.height },
+                //     displaySize: { width: 200, height: 200 },
+                //     resizeMode: 'contain',
+                // }).then((uri) => this.setState({ image: uri }))
+                // .catch(
+                // () => console.log('Error'));
             }
         });
     }
