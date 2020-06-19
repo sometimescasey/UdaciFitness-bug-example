@@ -1,0 +1,27 @@
+{
+  "name": "UdaciFitness",
+  "description": "Best triathlon tracker ever!",
+  "displayName": "UdaciFitness",
+  "expo": {
+    "sdkVersion": "37.0.0",
+    "name": "UdaciFitness",
+    "slug": "expo-template-bare",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "icon": "https://maxcdn.icons8.com/Color/PNG/512/Sports/triathlon-512.png",
+    "ios": {
+      "bundleIdentifier": "org.udacifitness.exp"
+     },
+     "android": {
+      "package": "org.udacifitness.exp"
+     },
+     "orientation": "portrait"
+  }
+}

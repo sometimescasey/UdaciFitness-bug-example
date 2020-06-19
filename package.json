@@ -1,0 +1,51 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "expo start",
+    "test": "jest",
+    "menu": "adb shell input keyevent 82"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.2",
+    "@react-native-community/async-storage": "^1.11.0",
+    "@react-native-community/image-editor": "^2.3.0",
+    "expo": "~37.0.3",
+    "expo-constants": "^9.0.0",
+    "expo-image-crop": "^1.0.4",
+    "expo-image-manipulator": "^8.1.0",
+    "expo-image-picker": "^8.1.0",
+    "expo-location": "^8.1.0",
+    "expo-notifications": "^0.3.2",
+    "expo-permissions": "^8.1.0",
+    "expo-splash-screen": "^0.2.3",
+    "expo-updates": "~0.2.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "~0.61.5",
+    "react-native-dev-menu-on-touch": "^1.0.3",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-reanimated": "~1.7.0",
+    "react-native-screens": "~2.2.0",
+    "react-native-unimodules": "~0.9.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "^4.3.9",
+    "react-navigation-tabs": "^2.8.13",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "styled-components": "^5.1.1",
+    "udacifitness-calendar": "github:ftrevo/react-native-calendars#master"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "babel-jest": "~25.2.6",
+    "jest": "~25.2.6",
+    "react-test-renderer": "~16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "private": true
+}
